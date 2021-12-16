@@ -11,6 +11,9 @@ toc_sticky: true
 
 date: 2021-12-16
 ---
+
+```java
+
 class Solution {
     public int singleNumber(int[] nums) {
         int num = 0;
@@ -23,3 +26,5 @@ class Solution {
 
     }
 }
+
+```
