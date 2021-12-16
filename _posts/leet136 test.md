@@ -1,4 +1,5 @@
 ---
+layout: single
 title:  "leet code test upload"
 categories:
   - Programmers
