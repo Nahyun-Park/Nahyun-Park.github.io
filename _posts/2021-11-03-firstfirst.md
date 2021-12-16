@@ -1,6 +1,7 @@
 ---
 layout: single
-title: "first"
+title: "firstfirst"
+
 ---
 
 # Sorry,,,
