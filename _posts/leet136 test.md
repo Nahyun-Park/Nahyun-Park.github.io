@@ -9,7 +9,6 @@ toc: true
 toc_sticky: true
 
 date: 2021-12-16
-last_modified_at: 2021-12-16
 ---
 class Solution {
     public int singleNumber(int[] nums) {
