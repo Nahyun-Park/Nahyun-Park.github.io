@@ -1,10 +1,7 @@
 ---
-layout: post
+layout: single
 title: "Notion글  Github io로 글 옮기기"
-subtitle: "[Tips]"
-date: 2021-12-16 17:00
-background: 
-tag: [Tips, Github io, Notion]
+
 ---
 
 # Engineering Wiki
