@@ -1,0 +1,25 @@
+---
+layout: single
+title:  "카이사르암호"
+header:
+  overlay_image: /assets/images/problemSolving.jpg
+  #og_image: /assets/images/page-header-og-image.png
+  actions:
+    - label: "문제링크"
+      url: "https://www.acmicpc.net/problem/5598"
+categories:
+  - algorithm
+tags:
+  - leetCode
+  - python
+last_modified_at: 2021-12-22 23:53
+---
+
+s = input()
+result =""
+for i in s:
+    i=ord(i)-3
+    if i<65:
+        i = i+26
+        result += chr(i)
+print(result)
