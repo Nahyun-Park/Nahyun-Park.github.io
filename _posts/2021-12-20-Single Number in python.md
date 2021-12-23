@@ -1,4 +1,4 @@
-
+---
 layout: single
 title:  "leetCode 136. Single Number"
 header:
