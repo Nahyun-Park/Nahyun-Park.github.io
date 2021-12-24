@@ -1,0 +1,45 @@
+---
+layout: single
+title:  "leetCode 24. Swap Nodes in Pairs"
+header:
+  overlay_image: /assets/images/probleSolving.PNG
+  #og_image: /assets/images/page-header-og-image.png
+  actions:
+    - label: "문제보기"
+      url: "https://leetcode.com/problems/swap-nodes-in-pairs/"
+categories:
+  - algorithm
+tags:
+  - leetCode
+  - java
+last_modified_at: 2021-12-24 23:38
+---
+
+24. Swap Nodes in Pairs
+
+```java
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode swapPairs(ListNode head) {
+        if (head == null){
+            return head;
+        }
+        ListNode n = head.next;
+        head.next = swapPairs(head.next.next);
+        n.next = head;
+        return n;
+        
+    }
+}
+
+```
