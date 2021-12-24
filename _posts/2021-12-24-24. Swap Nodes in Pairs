@@ -2,7 +2,7 @@
 layout: single
 title:  "leetCode 24. Swap Nodes in Pairs"
 header:
-  overlay_image: /assets/images/probleSolving.PNG
+  overlay_image: /assets/images/problemSolving.PNG
   #og_image: /assets/images/page-header-og-image.png
   actions:
     - label: "문제보기"
