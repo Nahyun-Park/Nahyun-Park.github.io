@@ -1,0 +1,44 @@
+---
+layout: single
+title:  "leetCode 66. Plus One"
+header:
+  overlay_image: /assets/images/problemSolving.jpg
+  #og_image: /assets/images/page-header-og-image.png
+  actions:
+    - label: "문제링크"
+      url: "https://leetcode.com/problems/plus-one/"
+categories:
+  - algorithm
+tags:
+  - leetCode
+  - java
+  
+last_modified_at: 2022-01-02
+---
+## **66. Plus One**
+
+```java
+class Solution {
+    public int[] plusOne(int[] digits) {
+        //제일 끝에 1 더하기
+        //9일경우 주의하기
+        
+        for (int i = digits.length - 1; i >=0; i--) {
+            if (digits[i] != 9) {
+                digits[i]++;
+                break;
+            } else {
+                digits[i] = 0;
+            }
+        }
+        if (digits[0] == 0) {
+            int[] res = new int[digits.length+1];
+            res[0] = 1;
+            return res;
+        }
+        return digits;
+
+        }
+}
+````
+
