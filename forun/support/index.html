@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>지원 — 포런 Forun</title>
+<meta name="description" content="포런(Forun) 고객 지원 — 자주 묻는 질문과 문의처">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root {
+    --bg: #0e0b1e;
+    --bg-card: #171233;
+    --line: #2c2452;
+    --gold: #d9b45b;
+    --text: #e8e4f5;
+    --muted: #a49bc8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif;
+    background: radial-gradient(ellipse at 50% -20%, #241b4d 0%, var(--bg) 55%);
+    min-height: 100vh;
+    color: var(--text);
+    line-height: 1.75;
+  }
+  .stars { position: fixed; inset: 0; pointer-events: none; opacity: .5; }
+  .container { max-width: 720px; margin: 0 auto; padding: 64px 24px 96px; position: relative; }
+  header { text-align: center; margin-bottom: 56px; }
+  .brand {
+    display: inline-block; text-decoration: none;
+    font-size: 14px; letter-spacing: .35em; color: var(--gold);
+    border: 1px solid var(--line); border-radius: 999px; padding: 8px 20px;
+    margin-bottom: 28px;
+  }
+  h1 { font-size: 30px; font-weight: 700; letter-spacing: -.02em; }
+  .sub { color: var(--muted); margin-top: 10px; font-size: 15px; }
+  .contact {
+    display: block; text-align: center; text-decoration: none;
+    background: linear-gradient(135deg, #2a1f5e, #1b1440);
+    border: 1px solid var(--gold); border-radius: 16px;
+    padding: 24px; margin-bottom: 44px; color: var(--text);
+  }
+  .contact strong { color: var(--gold); font-size: 17px; }
+  .contact span { display: block; color: var(--muted); font-size: 14px; margin-top: 6px; }
+  details {
+    background: linear-gradient(180deg, var(--bg-card), #130f29);
+    border: 1px solid var(--line); border-radius: 14px;
+    padding: 20px 24px; margin-bottom: 14px;
+  }
+  summary {
+    cursor: pointer; font-weight: 600; font-size: 15.5px; list-style: none;
+    display: flex; align-items: center; gap: 10px;
+  }
+  summary::before { content: "✦"; color: var(--gold); font-size: 12px; }
+  details[open] summary { margin-bottom: 10px; }
+  details p { font-size: 14.5px; color: var(--muted); }
+  details a { color: var(--gold); }
+  footer { text-align: center; margin-top: 56px; color: var(--muted); font-size: 13px; }
+  footer a { color: var(--gold); text-decoration: none; }
+</style>
+</head>
+<body>
+<svg class="stars" width="100%" height="100%"><circle cx="8%" cy="12%" r="1.2" fill="#d9b45b" opacity=".7"/><circle cx="22%" cy="30%" r="0.8" fill="#fff" opacity=".5"/><circle cx="87%" cy="18%" r="1" fill="#fff" opacity=".6"/><circle cx="70%" cy="8%" r="1.4" fill="#d9b45b" opacity=".5"/><circle cx="93%" cy="45%" r="0.9" fill="#fff" opacity=".4"/><circle cx="12%" cy="70%" r="1.1" fill="#fff" opacity=".4"/><circle cx="80%" cy="80%" r="1.2" fill="#d9b45b" opacity=".5"/><circle cx="45%" cy="92%" r="0.8" fill="#fff" opacity=".5"/></svg>
+<div class="container">
+  <header>
+    <a class="brand" href="../">FORUN</a>
+    <h1>무엇을 도와드릴까요?</h1>
+    <p class="sub">포런 이용 중 궁금한 점을 확인하세요</p>
+  </header>
+
+  <a class="contact" href="mailto:nahyundev@gmail.com">
+    <strong>✉ nahyundev@gmail.com</strong>
+    <span>문의 메일을 보내주시면 순차적으로 답변드려요 (영업일 기준 1–3일)</span>
+  </a>
+
+  <details>
+    <summary>로그인이 안 돼요</summary>
+    <p>Google·Apple 로그인 창이 뜨지 않으면 앱을 완전히 종료 후 다시 실행해 보세요. 이메일 로그인의 경우 비밀번호 재설정 메일이 스팸함에 있을 수 있어요. 계속 안 되면 기기 종류와 증상을 메일로 보내주세요.</p>
+  </details>
+
+  <details>
+    <summary>ChatGPT·Gemini·Claude 버튼을 눌렀는데 앱이 안 열려요</summary>
+    <p>해당 AI 앱이 기기에 설치되어 있어야 바로 열려요. 설치되어 있지 않으면 프롬프트가 클립보드에 복사되니, 원하는 AI 앱이나 웹사이트에 붙여넣기 하면 똑같이 이용할 수 있어요.</p>
+  </details>
+
+  <details>
+    <summary>지난 리딩 기록은 어디서 보나요?</summary>
+    <p>리딩 기록 메뉴에서 지금까지의 질문, 뽑은 카드, 생성한 프롬프트를 모두 다시 볼 수 있어요. 기록은 계정에 저장되어 기기를 바꿔도 유지됩니다.</p>
+  </details>
+
+  <details>
+    <summary>타로 해석은 누가 해주는 건가요?</summary>
+    <p>포런은 점술 결과를 직접 제공하지 않아요. 여러분이 뽑은 카드와 질문, 선택한 페르소나를 바탕으로 AI에게 물어볼 해석 프롬프트를 만들어 드리는 도구예요. 해석 결과는 재미와 참고용으로 즐겨주세요.</p>
+  </details>
+
+  <details>
+    <summary>계정을 삭제하고 싶어요</summary>
+    <p>계정 삭제를 원하시면 <a href="mailto:nahyundev@gmail.com">nahyundev@gmail.com</a>으로 가입한 이메일 주소와 함께 요청해 주세요. 삭제 시 프로필과 리딩 기록이 모두 파기되며 복구할 수 없어요.</p>
+  </details>
+
+  <details>
+    <summary>개인정보는 어떻게 관리되나요?</summary>
+    <p>수집 항목과 이용 목적은 <a href="../privacy/">개인정보처리방침</a>에서 확인할 수 있어요.</p>
+  </details>
+
+  <footer>
+    <p>포런 Forun — 카드는 내가 뽑고, 해석은 AI에게 ✦ <a href="../privacy/">개인정보처리방침</a></p>
+  </footer>
+</div>
+</body>
+</html>

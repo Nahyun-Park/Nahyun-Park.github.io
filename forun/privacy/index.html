@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>개인정보처리방침 — 포런 Forun</title>
+<meta name="description" content="포런(Forun) 개인정보처리방침 — AI 타로 프롬프트 생성 앱">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root {
+    --bg: #0e0b1e;
+    --bg-card: #171233;
+    --line: #2c2452;
+    --gold: #d9b45b;
+    --text: #e8e4f5;
+    --muted: #a49bc8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif;
+    background: radial-gradient(ellipse at 50% -20%, #241b4d 0%, var(--bg) 55%);
+    min-height: 100vh;
+    color: var(--text);
+    line-height: 1.75;
+  }
+  .stars { position: fixed; inset: 0; pointer-events: none; opacity: .5; }
+  .container { max-width: 720px; margin: 0 auto; padding: 64px 24px 96px; position: relative; }
+  header { text-align: center; margin-bottom: 56px; }
+  .brand {
+    display: inline-block; text-decoration: none;
+    font-size: 14px; letter-spacing: .35em; color: var(--gold);
+    border: 1px solid var(--line); border-radius: 999px; padding: 8px 20px;
+    margin-bottom: 28px;
+  }
+  h1 { font-size: 30px; font-weight: 700; letter-spacing: -.02em; }
+  .sub { color: var(--muted); margin-top: 10px; font-size: 15px; }
+  .card {
+    background: linear-gradient(180deg, var(--bg-card), #130f29);
+    border: 1px solid var(--line); border-radius: 16px;
+    padding: 32px 32px 28px; margin-bottom: 20px;
+  }
+  .card h2 {
+    font-size: 18px; color: var(--gold); font-weight: 600;
+    margin-bottom: 14px; display: flex; align-items: center; gap: 10px;
+  }
+  .card h2::before { content: "✦"; font-size: 13px; opacity: .8; }
+  .card p, .card li { font-size: 15px; color: var(--text); }
+  .card ul { padding-left: 20px; margin: 8px 0; }
+  .card li { margin-bottom: 6px; }
+  .card li::marker { color: var(--gold); }
+  .note { color: var(--muted); font-size: 13.5px; margin-top: 10px; }
+  a { color: var(--gold); }
+  .divider { text-align: center; color: var(--line); margin: 48px 0 40px; letter-spacing: .5em; }
+  .en h2::before { content: "☾"; }
+  footer { text-align: center; margin-top: 56px; color: var(--muted); font-size: 13px; }
+  footer a { text-decoration: none; }
+</style>
+</head>
+<body>
+<svg class="stars" width="100%" height="100%"><circle cx="8%" cy="12%" r="1.2" fill="#d9b45b" opacity=".7"/><circle cx="22%" cy="30%" r="0.8" fill="#fff" opacity=".5"/><circle cx="87%" cy="18%" r="1" fill="#fff" opacity=".6"/><circle cx="70%" cy="8%" r="1.4" fill="#d9b45b" opacity=".5"/><circle cx="93%" cy="45%" r="0.9" fill="#fff" opacity=".4"/><circle cx="12%" cy="70%" r="1.1" fill="#fff" opacity=".4"/><circle cx="80%" cy="80%" r="1.2" fill="#d9b45b" opacity=".5"/><circle cx="45%" cy="92%" r="0.8" fill="#fff" opacity=".5"/></svg>
+<div class="container">
+  <header>
+    <a class="brand" href="../">FORUN</a>
+    <h1>개인정보처리방침</h1>
+    <p class="sub">시행일: 2026년 9월 2일</p>
+  </header>
+
+  <div class="card">
+    <h2>1. 수집하는 개인정보</h2>
+    <p>포런(Forun, 이하 "서비스")은 다음 정보를 수집합니다.</p>
+    <ul>
+      <li><strong>계정 정보</strong> — Google·Apple 로그인 또는 이메일 가입 시 이메일 주소, 이름</li>
+      <li><strong>프로필 정보</strong> — 닉네임, 생년월일, 성별, 출생 시간·출생지(선택), 거주지(선택), MBTI·연애 성향·말투 취향·관심 분야(선택)</li>
+      <li><strong>상대방 프로필</strong> — 이용자가 직접 입력한 상대방의 이름, 나이, 성별, 성향, MBTI, 관계 유형</li>
+      <li><strong>리딩 기록</strong> — 질문, 뽑은 카드, 선택한 페르소나, 생성된 프롬프트, 생성 시각</li>
+      <li><strong>서비스 이용 기록</strong> — 앱 사용 통계(Firebase Analytics)</li>
+    </ul>
+    <p class="note">온보딩의 선택 항목은 입력하지 않아도 서비스를 이용할 수 있습니다.</p>
+  </div>
+
+  <div class="card">
+    <h2>2. 이용 목적</h2>
+    <ul>
+      <li>로그인 및 계정 관리</li>
+      <li>이용자 취향에 맞는 타로 해석 프롬프트 생성(개인화)</li>
+      <li>리딩 기록 저장·조회 기능 제공</li>
+      <li>서비스 품질 개선 및 오류 분석</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>3. 보관 및 파기</h2>
+    <p>개인정보는 회원 탈퇴 시 지체 없이 파기합니다. 다만 관계 법령에 따라 보존이 필요한 경우 해당 기간 동안 보관 후 파기합니다.</p>
+  </div>
+
+  <div class="card">
+    <h2>4. 처리 위탁 및 제3자 제공</h2>
+    <p>서비스는 데이터 보관·분석을 위해 Google LLC의 Firebase(Authentication, Cloud Firestore, Analytics)를 이용하며, 데이터는 Firebase 서버에 안전하게 저장됩니다.</p>
+    <p class="note">이용자가 생성된 프롬프트를 ChatGPT, Gemini, Claude 등 외부 AI 서비스로 직접 전달하는 것은 이용자의 선택이며, 전달된 내용에는 해당 서비스의 개인정보처리방침이 적용됩니다. 서비스가 이용자의 개인정보를 외부 AI에 자동으로 전송하지 않습니다.</p>
+  </div>
+
+  <div class="card">
+    <h2>5. 이용자의 권리</h2>
+    <p>이용자는 언제든지 자신의 개인정보를 열람·수정·삭제할 수 있으며, 계정 삭제(탈퇴)를 요청할 수 있습니다. 앱 내 설정 또는 아래 문의처를 통해 요청해 주세요.</p>
+  </div>
+
+  <div class="card">
+    <h2>6. 문의</h2>
+    <p>개인정보 관련 문의: <a href="mailto:nahyundev@gmail.com">nahyundev@gmail.com</a></p>
+  </div>
+
+  <div class="divider">✦ ✦ ✦</div>
+
+  <div class="card en">
+    <h2>Privacy Policy (English Summary)</h2>
+    <p>Forun collects your account info (email, name via Google/Apple/email sign-in), optional profile details (birth date, gender, MBTI, preferences), partner profiles you enter, your tarot reading history (questions, cards, generated prompts), and usage analytics.</p>
+    <p>Data is used to provide sign-in, personalize your reading prompts, and store your reading history. Data is stored securely via Google Firebase and deleted upon account deletion. Sharing prompts with external AI services (ChatGPT, Gemini, Claude) happens only when you choose to — their own privacy policies apply.</p>
+    <p>To access, correct, or delete your data, contact <a href="mailto:nahyundev@gmail.com">nahyundev@gmail.com</a>.</p>
+  </div>
+
+  <footer>
+    <p>포런 Forun — 카드는 내가 뽑고, 해석은 AI에게 ✦ <a href="../support/">지원 페이지</a></p>
+  </footer>
+</div>
+</body>
+</html>

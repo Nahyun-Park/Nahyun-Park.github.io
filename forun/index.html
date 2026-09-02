@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>포런 Forun — AI 타로</title>
+<meta name="description" content="카드는 내가 뽑고, 해석은 AI에게 — 내 말투로 즐기는 5장 타로 스프레드">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root {
+    --bg: #0e0b1e;
+    --bg-card: #171233;
+    --line: #2c2452;
+    --gold: #d9b45b;
+    --text: #e8e4f5;
+    --muted: #a49bc8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif;
+    background: radial-gradient(ellipse at 50% -20%, #241b4d 0%, var(--bg) 55%);
+    min-height: 100vh; color: var(--text); line-height: 1.75;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .stars { position: fixed; inset: 0; pointer-events: none; opacity: .5; }
+  .hero { text-align: center; padding: 48px 24px; max-width: 560px; position: relative; }
+  .cards { font-size: 40px; letter-spacing: .2em; margin-bottom: 24px; }
+  .brand { font-size: 15px; letter-spacing: .45em; color: var(--gold); margin-bottom: 16px; }
+  h1 { font-size: 34px; font-weight: 700; letter-spacing: -.02em; line-height: 1.4; }
+  .tagline { color: var(--muted); margin-top: 16px; font-size: 16px; }
+  .links { margin-top: 40px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .links a {
+    text-decoration: none; color: var(--text); font-size: 14.5px;
+    border: 1px solid var(--line); border-radius: 999px; padding: 10px 22px;
+    background: linear-gradient(180deg, var(--bg-card), #130f29);
+  }
+  .links a:hover { border-color: var(--gold); color: var(--gold); }
+  .soon { margin-top: 36px; color: var(--gold); font-size: 13.5px; letter-spacing: .2em; }
+</style>
+</head>
+<body>
+<svg class="stars" width="100%" height="100%"><circle cx="8%" cy="12%" r="1.2" fill="#d9b45b" opacity=".7"/><circle cx="22%" cy="30%" r="0.8" fill="#fff" opacity=".5"/><circle cx="87%" cy="18%" r="1" fill="#fff" opacity=".6"/><circle cx="70%" cy="8%" r="1.4" fill="#d9b45b" opacity=".5"/><circle cx="93%" cy="45%" r="0.9" fill="#fff" opacity=".4"/><circle cx="12%" cy="70%" r="1.1" fill="#fff" opacity=".4"/><circle cx="80%" cy="80%" r="1.2" fill="#d9b45b" opacity=".5"/><circle cx="45%" cy="92%" r="0.8" fill="#fff" opacity=".5"/></svg>
+<div class="hero">
+  <div class="cards">🂠 🂠 🂠 🂠 🂠</div>
+  <div class="brand">FORUN</div>
+  <h1>카드는 내가 뽑고,<br>해석은 AI에게</h1>
+  <p class="tagline">내 말투로 즐기는 5장 타로 스프레드 — 포런</p>
+  <div class="links">
+    <a href="./privacy/">개인정보처리방침</a>
+    <a href="./support/">지원 · FAQ</a>
+    <a href="mailto:nahyundev@gmail.com">문의하기</a>
+  </div>
+  <p class="soon">COMING SOON — App Store · Google Play</p>
+</div>
+</body>
+</html>
