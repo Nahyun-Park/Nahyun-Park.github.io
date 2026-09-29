@@ -1,0 +1,21 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "8W8F5ADSM3.com.forun.forunApp"
+        ],
+        "components": [
+          {
+            "/": "/forun/i",
+            "comment": "초대 링크"
+          },
+          {
+            "/": "/forun/i/*",
+            "comment": "초대 링크"
+          }
+        ]
+      }
+    ]
+  }
+}
